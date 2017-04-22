@@ -1,0 +1,18 @@
+name:                selda-example
+version:             0.1.0.0
+license:             BSD3
+license-file:        LICENSE
+author:              David Johnson
+maintainer:          djohnson.m@gmail.com
+category:            Database
+build-type:          Simple
+extra-source-files:  ChangeLog.md
+cabal-version:       >=1.10
+
+executable selda-example
+  main-is:             Main.hs
+  ghc-options:         -threaded -Wall -rtsopts
+  build-depends:       aeson, base, bytestring, exceptions, monad-control, mtl, postgresql-libpq
+                     , resource-pool, selda, selda-postgresql, selda-sqlite, servant
+                     , servant-server, text, transformers-base, warp
+  default-language:    Haskell2010
